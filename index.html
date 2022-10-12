@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>KeyCode Wikipedia</title>
+
+		<link rel="stylesheet" type="text/css" href="./styles.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+	</head>
+
+
+
+	<body>
+		
+		<div id="div-header">
+			<h3>Keycode Wikipedia</h3>
+		</div>
+
+		<!-- WELCOME MESSAGE SECTION -->
+		<section id="sec-header">
+			<div id="div-heading">
+				<h2> PRESS ANY KEY TO GET THE JAVASCRIPT EVENT KEYCODE INFO</h2>
+			</div>
+		</section>
+
+		<!-- INFORMATION SECTION -->
+		<section id="sec-info">
+			<div id="div-keydown">
+				<h1 id="keydown-pressed" ></h1>
+			</div>
+
+			<div class="flex-container">
+				<div class="flex-item">
+					<p class="info-para-title">event.key</p>
+					<h3 id="event-key" class="info-h3"></h3>
+					<p class="info-para-desc">The value of the key pressed. Accounts for modifiers keys that return CAPS and alternate chars.</p>			
+				</div>
+
+				<div class="flex-item">
+					<p class="info-para-title">event.code</p>
+					<h3 id="event-code" class="info-h3"></h3>
+					<p class="info-para-desc">The physical key on the keyboard. Doesn't care if you are holding a modifier like Shift.</p>
+				</div>
+
+				<div class="flex-item">
+					<p class="info-para-title">event.which</p>
+					<h3 id="event-which" class="info-h3"></h3>
+					<p class="info-para-desc">event.which and event.keyCode are (deprecated) in modern browsers. Use .key or .code instead.</p>
+				</div>
+			</div>
+		</section>
+
+
+
+
+		<script src="./app.js"></script>
+
+	</body>
+
+</html>
